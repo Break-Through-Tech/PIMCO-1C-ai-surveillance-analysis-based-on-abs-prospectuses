@@ -33,33 +33,7 @@ The proposed project is intriguing with the potential for significant practical 
 
 ---
 
-### Project Milestones
-
-Use these milestones to guide your work. Your team will create a **GitHub Projects board** to track tasks within each milestone.
-
-| Month       | Milestone                  | Key Activities                                         |
-|-------------|----------------------------|-------------------------------------------------------|
-| **September** | Data Understanding         | Explore dataset, handle missing values, document findings |
-| **October**   | Model Development          | Train baseline model, experiment with approaches, iterate |
-| **November**  | Evaluation & Presentation   | Finalize model, prepare presentation, document results |
-
-> **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
-
----
-
-## 📊 Dataset
-
-**Name and Source:** Real ABS prospectuses (Toyota TALNT, Verizon ABS, Sallie Mae SMB Trust) from SEC EDGAR 424B filings  
-**Format:** PDF  
-**Size:** unknown  
-**Location:** [Link to dataset or instructions for accessing it]
-
-### Key Details
-- Real ABS prospectuses from SEC EDGAR 424B filings
-- No known limitations or preprocessing needed
-- [Link to data dictionary or documentation, if available]
-
-# AI Due Diligence Agent for ABS Prospectuses
+# Title
 
 **Company / Org:** PIMCO  
 **Challenge Advisor:** Ji Zhang, [Email address]   
@@ -77,31 +51,46 @@ PIMCO is a leading global investment management firm, specializing in fixed inco
 ## 🎯 The Challenge
 
 ### Project Summary
-Build a deep agentic AI system using LangChain and LangGraph that autonomously conducts structured due diligence on a publicly available ABS prospectus — breaking a DD checklist into subtasks, retrieving relevant evidence from the document, reasoning through each question, self-evaluating the sufficiency of its answers, and generating a comprehensive cited due diligence report.
+Build a deep agentic AI system using Openai-agents-sdk, or LangChain and LangGraph that autonomously search or scan the library of available ABS prospectus (downloadable from SEC website https://efts.sec.gov/EFTS/hits) — in order to identity potential risk defined by atypical or non-standard practice of clauses. E.g., user may search "is any ABS deal using the paper custody?", the agent is expected to search the document library, and list all the deals that using (or highly likely) using the paper custody.
 
 ### Success Criteria
-Agent self-scores (Complete / Partial / Not Found + confidence float), Evaluation against 30 hand-crafted Q&A pairs, and stretch goal completeness score.
+1. Meet the key deliverables and millstones described below
+2. The AI agent has decent performance (e.g., 70-80% user can get satisfying answers from the Bot)
+
+### Project Milestones
+
+Below is the key deliverables:
+1. Data schema creation: downloading a good set of ABS deals' prospectus from the SEC, and prepare the indexing data schema (September)
+2. AI Agent using openai-agents-sdk or LangChain and LangGraph: Multi-node state graph: Planner → Retriever/AI Searching → Reasoner → Evaluator → Reporter (October)
+3. Build the user interface (testing and fine tuning the AI agent) (November)
+
+> **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
+
+---
+
+## 📊 Dataset
+
+**Name and Source:** Real ABS prospectuses from SEC EDGAR 424B filings  
+**Format:** Text, PDF   
+**Size:** Less than or equal to 1 GB
+**Location:** https://www.sec.gov/search-filings or https://www.sec.gov/edgar/search/
+
+### Key Details
+- [Brief description of what's in the data]
+- [Any known limitations or preprocessing needed]
+- [Link to data dictionary or documentation, if available]
 
 ---
 
 ## 🛠️ Suggested Approach
 
-**ML Problem Type:** NLP
+**ML Problem Type:** Large Language Models (LLMs) / Generative AI
 
 **Recommended Libraries:**
-- langchain
-- langgraph
-- openai
-- faiss-cpu
-- pdfplumber
-- sec-edgar-downloader
-- pydantic
-- streamlit
-- fpdf2
-- pandas
+- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
 
 **Evaluation Metrics:**
-- Completeness score, confidence float metrics
+- [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
 
 ---
 
@@ -110,16 +99,16 @@ Agent self-scores (Complete / Partial / Not Found + confidence float), Evaluatio
 The following resources will help your team understand the problem space and potential technical approaches for this project:
 
 **Background Reading:**
-- [Link to an article or blog post about the problem domain]
-- [Link to an industry report or case study]
+- [e.g., Link to an article or blog post about the problem domain]
+- [e.g., Link to an industry report or case study]
 
 **Technical Tutorials:**
-- [Link to a free tutorial on the ML technique(s) involved]
-- [Link to documentation for a key library or tool]
+- [e.g., Link to a free tutorial on the ML technique(s) involved]
+- [e.g., Link to documentation for a key library or tool]
 
 **Code Examples:**
-- [Link to a relevant GitHub repo]
-- [Link to a sample implementation or starter code]
+- [e.g., Link to a relevant GitHub repo]
+- [e.g., Link to a sample implementation or starter code]
 
 **Other:**
 - [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
@@ -130,14 +119,19 @@ The following resources will help your team understand the problem space and pot
 
 ## 🤝 How We'll Work Together
 
-**Check-ins:** During our biweekly 60-min AI Studio Lab Section meeting block (2nd and 4th week of every month)  
-**Communication:** [e.g., Slack (Break Through Tech workspace) or email]  
-**Response time:** [e.g., Within 48 hours on weekdays]  
+**Official check-ins:** During our biweekly 45-minute AI Studio Lab Section meeting block (2nd and 4th week of every month)
 
-**Recommended Tools:**
-- **Coding:** [e.g., Google Colab, VS Code]
-- **Collaboration:** [e.g., GitHub, Notion]
-- **Virtual Meetings:** [e.g., Zoom, Google Meet]
+ **Other ways to reach out to me with questions:** 
+* [e.g., Your team's channel within Break Through Tech’s Discord space]
+* [e.g., Email; please copy your teammates and AI Studio Coach]
+* [e.g., Request a team check-in on Zoom]
+* [Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.]
+
+> 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
+
+**Recommended free coding / collaboration tools**
+* […]
+* […]
 
 ---
 
@@ -147,12 +141,10 @@ The following resources will help your team understand the problem space and pot
 2. **Begin reviewing the dataset** using the link above
 3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
-I'm excited to work with you!
+I’m excited to work with you!
 
 ---
 
 ## ❓ Questions?
 
-Please bring any questions to our first meeting during the week of August 24th (Break Through Tech's Bridge to Studio - Session B).
-
----
+Please bring any questions to our first meeting during the week of August 24th (Break Through Tech’s Bridge to Studio - Session C). 
