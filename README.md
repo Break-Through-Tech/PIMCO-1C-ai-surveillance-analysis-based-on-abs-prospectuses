@@ -8,9 +8,9 @@
 
 | Name             | GitHub Handle | Contribution                                                             |
 |------------------|---------------|--------------------------------------------------------------------------|
-| Saivya Telang    | @saivyatelang | Data exploration, visualization, overall project coordination            |
-| Mahi Sheth       | @     | Data collection, exploratory data analysis (EDA), dataset documentation  |
-| Maxi Tran        | @  | Data preprocessing, feature engineering, data validation                 |
+| Saivya Telang    | @saivyatelang | Data collection, text extraction, metadata organization  |
+| Mahi Sheth       | @     |   |
+| Maxi Tran        | @  |                  |
 
 ---
 
@@ -18,10 +18,12 @@
 
 **Example:**
 
-- Developed a machine learning model using `[model type/technique]` to address `[challenge project task]`.
-- Achieved `[key metric or result]`, demonstrating `[value or impact]` for `[host company]`.
-- Generated actionable insights to inform business decisions at `[host company or stakeholders]`.
-- Implemented `[specific methodology]` to address industry constraints or expectations.
+- Collected **122 SEC ABS prospectus filings** in HTM/HTML format for analysis.
+- Extracted and organized text from the prospectuses using **Python, Pandas, and BeautifulSoup**.
+- Created an index containing filing information such as **deal name, filing date, filing type, and SEC metadata**.
+- Developed an initial **keyword and regular expression (regex) search** to identify potentially relevant information across prospectuses.
+- Working toward an AI-powered search and question-answering tool that can identify relevant deals and provide supporting passages from ABS prospectuses.
+
 
 ---
 
@@ -39,22 +41,55 @@
 
 ## 🏗️ **Project Overview**
 
-**Describe:**
-
-- How this project is connected to the Break Through Tech AI Program
-- Your AI Studio host company and the project objective and scope
-- The real-world significance of the problem and the potential impact of your work
+- This project is part of the **Break Through Tech AI Program** and is being developed with **PIMCO** as the AI Studio host company.
+- The project focuses on developing an **AI-powered surveillance and search tool** for ABS prospectuses.
+- The goal is to help users efficiently search through large collections of **Asset-Backed Securities (ABS) prospectuses**.
+- ABS prospectuses contain large amounts of detailed information that can be time-consuming to review manually.
+- The tool aims to allow users to ask questions in **plain language** and identify relevant deals and supporting passages.
+- An example question is:
+  - **"Which deals appear to use paper (physical) custody?"**
+- The project is being developed in stages:
+  - Data collection
+  - Text extraction
+  - Metadata organization
+  - Keyword and regex search
+  - Semantic search
+  - AI-generated responses
+  - Supporting citations
 
 ---
 
 ## 📊 **Data Exploration**
 
-**You might consider describing the following (as applicable):**
+- The current dataset contains:
+  - **124 total files**
+  - **122 HTM/HTML prospectus filings**
+  - **SEC 424H filings**
+  - Filing dates ranging from **2024–2026**
+- The prospectus files were collected from **SEC EDGAR**.
+- The HTM files were processed using **BeautifulSoup** to extract readable text.
+- Each filing is represented as a row in a Pandas DataFrame.
+- The current index includes:
+  - Deal/entity name
+  - Filing date
+  - Filing type
+  - File name
+  - Extracted text
+  - CIK
+  - Accession number
+  - Primary document name
+  - SEC document URL
+- SEC metadata was successfully matched to **116 of the 122 filings**.
+- Initial keyword testing showed:
+  - `"physical"` → **122 filings**
+  - `"custody"` → **94 filings**
+  - `"custodian"` → **122 filings**
+  - `"paper"` → **122 filings**
+  - `"physical custody"` → **0 filings**
+- These results showed that broad keyword searches can return too many results.
+- The results also showed that relevant information may be described using different wording across prospectuses.
+- The project is therefore moving toward **regex and semantic search** to identify related concepts.
 
-* The dataset(s) used: origin, format, size, type of data
-* Data exploration and preprocessing approaches
-* Insights from your Exploratory Data Analysis (EDA)
-* Challenges and assumptions when working with the dataset(s)
 
 **Potential visualizations to include:**
 
