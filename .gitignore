@@ -1,8 +1,21 @@
 
+# API credentials
+.env
+.env.*
+!.env.example
 
-# macOS
-.DS_Store
+# Jupyter
+.ipynb_checkpoints/
 
-# Processed/generated data
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Generated data and embeddings
 data/processed/
+*.faiss
+*semantic_state*.json
 
+# Local system files
+.DS_Store
