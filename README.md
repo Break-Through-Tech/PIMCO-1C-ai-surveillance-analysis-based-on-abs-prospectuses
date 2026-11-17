@@ -9,8 +9,8 @@
 | Name             | GitHub Handle | Contribution                                                             |
 |------------------|---------------|--------------------------------------------------------------------------|
 | Saivya Telang    | @saivyatelang | Data collection, text extraction, metadata organization  |
-| Mahi Sheth       | @     |   |
-| Maxi Tran        | @  |                  |
+| Mahi Sheth       | @Mahisheth      |   |
+| Maxi Tran        | @ktranvu      |                  |
 
 ---
 
