@@ -1,0 +1,20 @@
+{
+  "version": "heldout_proposals_v1",
+  "questions": [
+    ["h01", "Who may request a list of Toyota receivable file locations and related electronic records, and under what conditions is it made available?", {"0000929638-26-001430": [207]}],
+    ["h02", "In the April 2026 Toyota deal, in whose name is the Collection Account established and for whose benefit?", {"0000929638-26-001430": [208]}],
+    ["h03", "How does the Toyota servicing agreement treat a force-majeure delay when determining whether a Servicer Default has occurred?", {"0000929638-26-001430": [218]}],
+    ["h04", "What does Toyota depositor counsel’s substantive-consolidation opinion address, and what limits are stated on its basis?", {"0000929638-26-001430": [235]}],
+    ["h05", "What possible consequence for Toyota securityholder distributions is described if the FDIC departs from its counsel’s position under orderly liquidation authority?", {"0000929638-26-001430": [239]}],
+    ["h06", "What organizational features are intended to shield the May 2024 AFS automobile contracts from a sponsor bankruptcy?", {"0001193125-24-139394": [38]}],
+    ["h07", "If a bankruptcy recharacterization attempt succeeds in the May 2024 AFS deal, what does the filing say may happen to the notes and the amount recovered?", {"0001193125-24-139394": [39]}],
+    ["h08", "What repurchase chain applies in the May 2024 AFS deal when a depositor warranty breach materially and adversely affects noteholders’ interests?", {"0001193125-24-139394": [48]}],
+    ["h09", "Under what two conditions does the May 2024 AFS filing say the FDIC may repudiate a contract under orderly liquidation authority?", {"0001193125-24-139394": [156]}],
+    ["h10", "Which entity services part of the June 2024 AFS auto-loan pool from Canada, and which agreement governs its work?", {"0001193125-24-169068": [46]}],
+    ["h11", "Compare the Toyota April 2026 and AFS June 2024 approaches to filing financing statements when vehicle certificates of title are left unchanged.", {"0000929638-26-001430": [229], "0001193125-24-169068": [145]}],
+    ["h12", "In January 2025 AFS, distinguish the procedure that records a lien electronically from the procedure that deposits the endorsed certificate of title.", {"0001193125-25-002125": [146]}],
+    ["h13", "When principal-sharing series have combined shortfalls greater than the available Shared Principal Collections, how does American Express Series 2024-2 allocate those collections?", {"0001193125-24-092834": [143]}],
+    ["h14", "Who establishes the accounts that hold cash in Toyota April 2026, and how does that differ from the American Express principal-funding transfer process during controlled accumulation?", {"0000929638-26-001430": [208], "0001193125-24-092834": [104]}],
+    ["h15", "Does the Toyota April 2026 prospectus state that a dedicated government insurance policy covers delayed receivable payments after an FDIC action, or is that protection unestablished by the cited disclosure?", {"0000929638-26-001430": [239]}]
+  ]
+}

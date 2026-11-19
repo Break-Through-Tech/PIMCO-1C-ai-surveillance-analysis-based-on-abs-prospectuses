@@ -1,1 +1,12 @@
+beautifulsoup4
+faiss-cpu
+gradio==6.32.0
+numpy
+openai
+pandas
+python-dotenv
+scikit-learn
+tiktoken
+tqdm
 
+streamlit>=1.51,<2

@@ -1,0 +1,13 @@
+{
+  "version": "task2_v1",
+  "original_ids": ["q01", "q02", "q05", "q09", "q10", "q14", "q17", "q18", "q19"],
+  "supplemental": [
+    {"id":"s01","question":"How does the May 2024 AFS SenSub deal intend to structure the true sale of receivables and what bankruptcy recharacterization risks remain?","file":"AFS_SENSUB_CORP__2024-05-15_424H.htm","evidence":{"AFS_SENSUB_CORP__2024-05-15_424H.htm":[38,39,48,156]}},
+    {"id":"s02","question":"In the June 2024 AFS SenSub deal, which transfers are intended to be a true sale and where is a security interest granted?","file":"AFS_SENSUB_CORP__2024-06-26_424H.htm","evidence":{"AFS_SENSUB_CORP__2024-06-26_424H.htm":[9,46,155]}},
+    {"id":"s03","question":"How could a subsequent purchaser taking possession or control of installment sale contracts defeat the Toyota indenture trustee’s interest?","file":"TOYOTA_AUTO_FINANCE_RECEIVABLES_LLC_2026-04-08_424H.htm","evidence":{"TOYOTA_AUTO_FINANCE_RECEIVABLES_LLC_2026-04-08_424H.htm":[207,228]}},
+    {"id":"s04","question":"What happens to principal collections in the American Express Series 2024-2 deal if a Pay-Out Event triggers early amortization?","file":"AMERICAN_EXPRESS_CREDIT_ACCOUNT_MASTER_TRUST_2024-04-11_424H.htm","evidence":{"AMERICAN_EXPRESS_CREDIT_ACCOUNT_MASTER_TRUST_2024-04-11_424H.htm":[85,86,104]}},
+    {"id":"s05","question":"In the January 2025 AFS SenSub deal, how are security interests in financed vehicles perfected in states with electronic lien recording?","file":"AFS_SENSUB_CORP__2025-01-06_424H.htm","evidence":{"AFS_SENSUB_CORP__2025-01-06_424H.htm":[145,146]}},
+    {"id":"s06","question":"Among the April 2026 Toyota and the May and June 2024 AFS SenSub deals, which describe an agent or outside service provider controlling electronic contracts?","file":null,"evidence":{"TOYOTA_AUTO_FINANCE_RECEIVABLES_LLC_2026-04-08_424H.htm":[64,65,207],"AFS_SENSUB_CORP__2024-05-15_424H.htm":[146],"AFS_SENSUB_CORP__2024-06-26_424H.htm":[145]}},
+    {"id":"s07","question":"Who invests Toyota collections before deposit and who bears the investment risk?","file":"TOYOTA_AUTO_FINANCE_RECEIVABLES_LLC_2026-04-08_424H.htm","evidence":{"TOYOTA_AUTO_FINANCE_RECEIVABLES_LLC_2026-04-08_424H.htm":[212]}}
+  ]
+}
